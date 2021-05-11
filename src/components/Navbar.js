@@ -63,6 +63,7 @@ const NavbarContainer = styled.nav`
     position: fixed;
     width: 100%;
     justify-content: space-evenly;
+    z-index: 1000;
 
 `;
 const NavbarLists = styled.ul`
@@ -71,13 +72,22 @@ const NavbarLists = styled.ul`
     list-style: none;
 
     .active {
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid #ffae00;
     }
     
 `;
 const NavbarListItem = styled.li`
     display: "inline-block";
-    padding:10px 10px 0 10px;
+    padding:10px 10px 5px 10px;
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color:white;
+    transition: all 500ms;
+
+    :hover {
+        transform: scale(1.2);
+    }
 
 `;
