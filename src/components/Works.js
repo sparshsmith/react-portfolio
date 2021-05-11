@@ -13,5 +13,6 @@ export default Works
 
 const WorksContainer = styled.div`
     height: 100vh;
-    background-color: cornsilk;
+    background-color: chocolate;
+    color: black;
 `
