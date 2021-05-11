@@ -48,7 +48,7 @@ const HomeContainer = styled.div`
     position: relative;
     min-height: 100vh;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: center; 
     text-align: center;
 
@@ -59,6 +59,7 @@ const HomeImageContainer = styled.div`
     overflow: hidden;
     z-index: -1;
     position: absolute;
+
     img {
         height: 100%;
         width: 100%;
@@ -69,10 +70,11 @@ const HomeImageContainer = styled.div`
 
 const HomeContent = styled.div`
     color: white;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     padding: 30px;
     text-align: center;
     letter-spacing: 1.2px;
+   
 
     b {
         color: #ffae00;

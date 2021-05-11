@@ -9,7 +9,7 @@ function About() {
                     <img src='/images/about-me.png'></img>
                 </AboutMeLogo>
                 <Description>
-                    <p><span>Hi there! I'm <span className='highligt'>Sparsh Singh</span>. I graduated from Maulana Azad National Institute of Technology with the degree in Computer Science. I'm always in for learning new stuff.
+                    <p><span>Hi there! I'm Sparsh Singh. I'm always in for learning new stuff.
                     I have maintained and developed multiple projects from scratch, carrying the development of its' back-end and front-end codebase using MERN stack.
                     If you are trying to solve something complex, let's work together to solve that. Also, don’t hesitate if you want to ask me anything or if you just want to contact me 😊.</span>
                     </p>
@@ -22,16 +22,18 @@ function About() {
 export default About
 
 const AboutContainer = styled.div`
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: darkgoldenrod;
     display: flex;
     justify-content: center;
+    align-items: center;
 `
 
 const AboutMeContent = styled.div`
     display: flex;
-    margin-top: 150px;
     padding: 20px;
+    align-items: center;
+    justify-content: center;
 `;
 
 const Description = styled.div`
@@ -51,7 +53,7 @@ const Description = styled.div`
         }
     }
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 620px){
         width: 90%;
         p {
         text-align: center;
@@ -70,7 +72,7 @@ const AboutMeLogo = styled.div`
         width: 100%;
     }
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 620px){
         display: none;
     }
 `
