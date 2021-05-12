@@ -13,5 +13,5 @@ export default Contact
 
 const ContactContainer = styled.div`
     height: 100vh;
-    background-color: cornflowerblue;
+    background-color: black;
 `

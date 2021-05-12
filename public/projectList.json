@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Pig Game",
+        "description": "Multiplayer game where players take turns to roll a single die as many times as they wish, adding all roll results to a running total, but losing their gained score for the turn if they roll a 1.",
+        "techonology": [
+            "Javascript",
+            "HTML",
+            "CSS"
+        ],
+        "imagePath": "/images/pig-game1.JPG",
+        "demoURL": "https://sparshsmith.github.io/pig-game/"
+    },
+    {
+        "name": "Bankist App",
+        "description": "Simple web application depicting login and trasaction features for general banking.",
+        "techonology": [
+            "Javascript",
+            "HTML",
+            "CSS"
+        ],
+        "imagePath": "/images/bankist_functionality.jpg",
+        "demoURL": "https://sparshsmith.github.io/bankist_functionality/"
+    },
+    {
+        "name": "Mapty",
+        "description": "Web Application integrated with maps to track workouts done by the user.",
+        "techonology": [
+            "Javascript",
+            "HTML",
+            "CSS"
+        ],
+        "imagePath": "/images/mapty.jpg",
+        "demoURL": "https://sparshsmith.github.io/mapty_project/"
+    },
+    {
+        "name": "Forkify",
+        "description": "Web Application to fetch recipes. Also can add and bookmark your recipes for future.",
+        "techonology": [
+            "Javascript",
+            "HTML",
+            "CSS"
+        ],
+        "imagePath": "/images/forkify.jpg",
+        "demoURL": "https://sparshs-forkify.netlify.app/"
+    },
+    {
+        "name": "Natours",
+        "description": "Complete Web application to book tours with functionality like authorization, checking out credit card.",
+        "techonology": [
+            "NodeJS",
+            "ExpressJS",
+            "MongoDB",
+            "Javascript",
+            "HTML",
+            "CSS"
+        ],
+        "imagePath": "/images/natours.jpg",
+        "demoURL": "https://natours-sparsh.herokuapp.com/"
+    },
+    {
+        "name": "ReactMeals",
+        "description": "Static web application to order food.",
+        "techonology": [
+            "ReactJS",
+            "CSS"
+        ],
+        "imagePath": "/images/react-meals.JPG",
+        "demoURL": "https://sparshsmith.github.io/react-meals/"
+    },
+    {
+        "name": "Disney",
+        "description": "UI clone for Disney's website having features like login and view movie details.",
+        "techonology": [
+            "ReactJS",
+            "Firebase",
+            "CSS"
+        ],
+        "imagePath": "/images/disney.jpg",
+        "demoURL": "https://hotstar-clone-1.firebaseapp.com/"
+    },
+    {
+        "name": "Slack",
+        "description": "UI clone for Slack having features like login and create and chat in channel. ",
+        "techonology": [
+            "ReactJS",
+            "Firebase",
+            "CSS"
+        ],
+        "imagePath": "/images/slack.jpg",
+        "demoURL": "https://slack-clone-f6f68.web.app/"
+    }
+]
