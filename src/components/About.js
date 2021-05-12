@@ -22,7 +22,7 @@ function About() {
 export default About
 
 const AboutContainer = styled.div`
-    min-height: 80vh;
+    min-height: 40vh;
     background-color: darkgoldenrod;
     display: flex;
     justify-content: center;
@@ -34,18 +34,18 @@ const AboutMeContent = styled.div`
     padding: 20px;
     align-items: center;
     justify-content: center;
+    margin-top: 25px;
 `;
 
 const Description = styled.div`
-    width: 60%;
+    width: 70%;
 
     p {
         text-align: left;
         margin: 20px;
         font-size: 18px;
         letter-spacing: 1.2px;
-        padding: 7px;
-
+        
         span{
             background-color: darkgray;
             color: black;
@@ -56,20 +56,22 @@ const Description = styled.div`
     @media screen and (max-width: 620px){
         width: 90%;
         p {
-        text-align: center;
         margin: 20px;
     }
     
     }
 `
 const AboutMeLogo = styled.div`
-    width: 40%;
+    width: 30%;
     overflow: hidden;
     height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     
     img {
-        height: 100%;
-        width: 100%;
+        height: 30%;
+        width: 50%;
     }
 
     @media screen and (max-width: 620px){
