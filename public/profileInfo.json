@@ -1,54 +1,67 @@
 [
     {
+        "id": "1",
         "type": "Education",
         "item": [
             {
+                "id": "1.1",
                 "title": "Maulana Azad National Institute of Technology",
                 "description": "B.Tech • Computer Science • 2011 - 2015"
             }
         ]
     },
     {
+        "id": "2",
         "type": "Work",
         "item": [
             {
+                "id": "2.1",
                 "title": "Virusa Consulting Pvt. Ltd.",
                 "description": "Associate Consultant • Aug 2015 - April 2019"
             },
             {
+                "id": "2.2",
                 "title": "Kony India",
                 "description": "SSDE • May 2019 - Present"
             }
         ]
     },
     {
+        "id": "3",
         "type": "Skills",
         "item": [
             {
+                "id": "3.1",
                 "title": "Javasript",
                 "rating": 8
             },
             {
+                "id": "3.2",
                 "title": "Java",
                 "rating": 8
             },
             {
+                "id": "3.3",
                 "title": "ReactJS",
                 "rating": 7
             },
             {
+                "id": "3.4",
                 "title": "NodeJS",
                 "rating": 5
             },
             {
+                "id": "3.5",
                 "title": "Git",
                 "rating": 8
             },
             {
+                "id": "3.6",
                 "title": "HTML/CSS",
                 "rating": 7
             },
             {
+                "id": "3.7",
                 "title": "Data Structures & Algorithms",
                 "rating": 7
             }

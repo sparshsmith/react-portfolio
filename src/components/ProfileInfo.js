@@ -14,7 +14,6 @@ function ProfileInfo() {
             }
         ).then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 setProfileData(data)
             });
     }
@@ -28,14 +27,14 @@ function ProfileInfo() {
                 profileData
                 && profileData.length > 0
                 && profileData.map(object => (
-                    <ProfileContainer>
+                    <ProfileContainer key={object.id}>
                         <Type>
                             <span>{object.type}</span>
                         </Type>
                         <Item>
                             {
                                 object.item.map(i => (
-                                    <Description>
+                                    <Description key={i.id}>
                                         <h4>{i.title}</h4>
                                         {i.description ?
                                             (<span>{i.description}</span>)

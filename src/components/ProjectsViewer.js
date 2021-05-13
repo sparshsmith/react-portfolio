@@ -1,8 +1,30 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components';
+import Dialog from '@material-ui/core/Dialog';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContainer from './DialogContainer';
 
 function ProjectsViewer() {
     const [projectData, setProjectData] = useState([]);
+    const [showDialog, setShowDialog] = useState({
+        open: false,
+        project: []
+    });
+
+    const OpenDialog = (project) => {
+        setShowDialog({
+            open: true,
+            project
+        });
+    }
+
+    const closeDialog = () => {
+        setShowDialog({
+            open: false,
+            project: []
+        });
+    }
 
     const getData = () => {
         fetch('./projectList.json'
@@ -27,11 +49,18 @@ function ProjectsViewer() {
                 projectData
                 && projectData.length > 0
                 && projectData.map(project => (
-                    <Wrap>
+                    <Wrap key={project.id} onClick={() => {
+                        OpenDialog(project)
+                    }} projectData={project}>
                         <img src={project.imagePath} alt="" />
                     </Wrap>
                 ))
             }
+            <Dialog open={showDialog.open} onClose={closeDialog}>
+                <DialogContent>
+                    <DialogContainer title={showDialog.project.name} description={showDialog.project.description} url={showDialog.project.demoURL} technology={showDialog.project.techonology} imagePath={showDialog.project.imagePath} />
+                </DialogContent>
+            </Dialog>
         </Container>
     )
 }
