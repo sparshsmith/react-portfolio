@@ -110,7 +110,7 @@ function Contact() {
                     </DialogContainer>
                 </DialogContent>
             </Dialog>
-            <span>© Made by Sparsh. All rights reserved.</span>
+            <Footer>© Made by Sparsh. All rights reserved.</Footer>
         </ContactContainer>
     )
 }
@@ -118,7 +118,7 @@ function Contact() {
 export default Contact
 
 const ContactContainer = styled.div`
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: black;
     display: flex;
     align-items: center;
@@ -138,14 +138,19 @@ const ContactForm = styled.form`
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     padding: 10px;
     margin-top:30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 
     .MuiSvgIcon-root{
         font-size: 55px;
     }
+
+    @media screen and (max-width: 620px){
+        width: 80%;
+       font-size: 10px;
+   }
 `
 
 const Input = styled.div`
@@ -186,7 +191,7 @@ const ButtonContainer = styled.div`
         width: 100%;
         padding: 10px;
         margin: 5px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         color: black;
         background-color: #bfbfbf;
 
@@ -211,4 +216,7 @@ const DialogContainer = styled.div`
         padding: 10px;
         letter-spacing: 1.1px;
     }
+`
+const Footer = styled.span`
+    bottom: 13px;
 `

@@ -65,6 +65,11 @@ const NavbarContainer = styled.nav`
     justify-content: space-evenly;
     z-index: 1000;
 
+    @media screen and (max-width: 620px){
+        
+       font-size: 13px;
+   }
+
 `;
 const NavbarLists = styled.ul`
     display: flex;
