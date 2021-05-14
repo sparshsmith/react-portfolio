@@ -12,7 +12,7 @@ function Details() {
             <ContactDetails>
                 <h3>Contact Details</h3>
                 <ContactDetailsItem>
-                    Sparsh Singh
+                    Sparsh Smith Singh
                     </ContactDetailsItem>
                 <ContactDetailsItem>
                     <LocationCityIcon />
