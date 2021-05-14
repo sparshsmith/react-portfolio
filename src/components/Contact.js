@@ -2,12 +2,29 @@ import React, { useState } from 'react'
 import styled from 'styled-components';
 import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
 import Button from '@material-ui/core/Button';
+import emailjs from 'emailjs-com';
+import Dialog from '@material-ui/core/Dialog';
+import DialogContent from '@material-ui/core/DialogContent';
 
 function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+
+    const [showDialog, setShowDialog] = useState({
+        open: false,
+        message: '',
+        success: false
+    });
+
+    const closeDialog = () => {
+        setShowDialog({
+            open: false,
+            message: '',
+            success: false
+        });
+    }
 
     const handleNameChange = event => {
         setName(event.target.value);
@@ -24,13 +41,29 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (name.trim() === '' || email.trim() === '' || subject.trim() === '' || message.trim() === '')
+            return;
         const data = {
-            name,
-            email,
+            from_name: name,
+            reply_to: email,
             subject,
             message
         };
         console.log(data);
+        emailjs.send('service_0nclcwd', 'template_7jlt7rc', data, 'user_uFxIEWynzoCya5JlT02bQ') //
+            .then((result) => {
+                setShowDialog({
+                    open: true,
+                    message: 'Email Sent Succefully!',
+                    success: true
+                });
+            }, (err) => {
+                setShowDialog({
+                    open: true,
+                    message: 'There was an issue while sending email. Please try again later!',
+                    success: false
+                });
+            });
         handleClear();
     }
 
@@ -65,6 +98,18 @@ function Contact() {
                     <Button onClick={handleClear}>Clear</Button>
                 </ButtonContainer>
             </ContactForm>
+            <Dialog open={showDialog.open} onClose={closeDialog}>
+                <DialogContent>
+                    <DialogContainer>
+                        {
+                            showDialog.success ? (
+                                <img src='/images/success.png' alt='success' />
+                            ) : (<img src='/images/error.png' alt='error' />)
+                        }
+                        <h5>{showDialog.message}</h5>
+                    </DialogContainer>
+                </DialogContent>
+            </Dialog>
             <span>© Made by Sparsh. All rights reserved.</span>
         </ContactContainer>
     )
@@ -148,5 +193,22 @@ const ButtonContainer = styled.div`
         :hover {
             background-color: #999999;
         }
+    }
+`
+const DialogContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img{
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+    }
+
+    h5{
+        padding: 10px;
+        letter-spacing: 1.1px;
     }
 `
