@@ -33,7 +33,7 @@ function Details() {
                     color="secondary"
                     className="downloadButton"
                     startIcon={<GetAppIcon />}
-                    onClick={event => window.open("https://drive.google.com/file/d/15vQS9P7aLHtaytU5hJoTj8a5RGQWYz_u/view?usp=sharing", "_blank")}
+                    onClick={event => window.open("https://drive.google.com/file/d/1Sa5w5sLjh0i3zFZ4oFg9ZQYXlK97BSzG/view?usp=sharing")}
                 >Download Resume</Button>
             </Download>
         </DetailContainer>
