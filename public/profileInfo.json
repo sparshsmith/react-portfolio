@@ -16,13 +16,18 @@
         "item": [
             {
                 "id": "2.1",
-                "title": "Virusa Consulting Pvt. Ltd.",
-                "description": "Associate Consultant • Aug 2015 - April 2019"
+                "title": "Oracle",
+                "description": "Technical Lead • Sep 2021 - Present"
             },
             {
                 "id": "2.2",
                 "title": "Kony India",
-                "description": "SSDE • May 2019 - Present"
+                "description": "SSDE • May 2019 - Aug 2021"
+            },
+            {
+                "id": "2.3",
+                "title": "Virusa Consulting Pvt. Ltd.",
+                "description": "Associate Consultant • Aug 2015 - April 2019"
             }
         ]
     },
