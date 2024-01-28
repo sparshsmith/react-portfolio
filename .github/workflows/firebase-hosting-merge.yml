@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '20'
       - run: export NODE_OPTIONS=--openssl-legacy-provider
-      - run: npm update
+      - run: npm update --force
       - run: npm install --force
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
